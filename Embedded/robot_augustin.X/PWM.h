@@ -8,4 +8,6 @@ void InitPWM(void);
 
 void PWMSetSpeed(float vitesseEnPourcents, int moteur);
 
+void PWMUpdateSpeed (void);
+
 #endif 
