@@ -10,8 +10,8 @@
 #define MOTEUR1_IN1 _LATB14
 #define MOTEUR1_IN2 _LATB15
 
-#define MOTEUR6_IN2 _LATC6
-#define MOTEUR6_IN1 _LATC7
+#define MOTEUR6_IN2 _LATC7
+#define MOTEUR6_IN1 _LATC6
 
 //Configuration spécifique du moteur gauche
 #define MOTEUR_GAUCHE_H_IO_OUTPUT MOTEUR1_IN1

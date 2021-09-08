@@ -10,4 +10,6 @@ void PWMSetSpeed(float vitesseEnPourcents, int moteur);
 
 void PWMUpdateSpeed (void);
 
+void PWMSetSpeedConsigne (float vitesseEnPourcents, int moteur );
+
 #endif 
