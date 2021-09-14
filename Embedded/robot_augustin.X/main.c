@@ -23,8 +23,10 @@ int main(void) {
 
     InitPWM();
 
-//        PWMSetSpeed(30, 1);
-//        PWMSetSpeed(-30, 0);
+    InitADC1();
+
+    //        PWMSetSpeed(30, 1);
+    //        PWMSetSpeed(-30, 0);
 
     PWMSetSpeedConsigne(40, 1);
     PWMSetSpeedConsigne(40, 0);

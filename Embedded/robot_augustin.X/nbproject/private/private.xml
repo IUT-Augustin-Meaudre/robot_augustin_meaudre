@@ -6,15 +6,18 @@
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/timer.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/ChipConfig.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/robot.c</file>
+            <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/adc.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/main.c</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/Robot.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/IO.c</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/timer.c</file>
+            <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/main.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/ChipConfig.c</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/ToolBox.c</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/PWM.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/IO.h</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/ToolBox.h</file>
+            <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/ADC.c</file>
             <file>file:/C:/Github/robot_augustin_meaudre/Embedded/robot_augustin.X/PWM.c</file>
         </group>
     </open-files>

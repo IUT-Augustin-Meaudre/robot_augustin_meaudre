@@ -8,16 +8,8 @@
 #ifndef ADC_H
 #define	ADC_H
 
-#ifdef	__cplusplus
-extern "C" {
+void InitADC1(void);
+
+
 #endif
-
-
-
-
-#ifdef	__cplusplus
-}
-#endif
-
-#endif	/* ADC_H */
 
