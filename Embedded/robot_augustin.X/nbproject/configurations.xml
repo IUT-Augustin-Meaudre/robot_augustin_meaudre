@@ -24,10 +24,10 @@
       <itemPath>ChipConfig.c</itemPath>
       <itemPath>IO.c</itemPath>
       <itemPath>timer.c</itemPath>
-      <itemPath>robot.c</itemPath>
       <itemPath>ToolBox.c</itemPath>
       <itemPath>PWM.c</itemPath>
-      <itemPath>ADC.c</itemPath>
+      <itemPath>adc.c</itemPath>
+      <itemPath>Robot.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

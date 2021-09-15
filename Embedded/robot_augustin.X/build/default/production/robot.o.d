@@ -1,3 +1,3 @@
-build/default/production/robot.o:  \
-robot.c  \
+build/default/production/Robot.o:  \
+Robot.c  \
 Robot.h 

@@ -1,4 +1,4 @@
-build/default/production/ADC.o:  \
-ADC.c  \
+build/default/production/adc.o:  \
+adc.c  \
 adc.h  \
 main.h 

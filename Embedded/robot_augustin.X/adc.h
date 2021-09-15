@@ -10,6 +10,13 @@
 
 void InitADC1(void);
 
+unsigned int * ADCGetResult(void);
+
+unsigned char ADCIsConversionFinished(void);
+
+void ADCClearConversionFinishedFlag(void);
+
+void ADC1StartConversionSequence();
 
 #endif
 
