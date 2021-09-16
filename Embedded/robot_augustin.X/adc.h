@@ -16,7 +16,7 @@ unsigned char ADCIsConversionFinished(void);
 
 void ADCClearConversionFinishedFlag(void);
 
-void ADC1StartConversionSequence();
+void ADC1StartConversionSequence(void);
 
 #endif
 

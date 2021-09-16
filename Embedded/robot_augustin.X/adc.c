@@ -77,7 +77,7 @@ void __attribute__((interrupt, no_auto_psv)) _AD1Interrupt(void) {
     ADCConversionFinishedFlag = 1;
 }
 
-void ADC1StartConversionSequence() {
+void ADC1StartConversionSequence(void) {
     AD1CON1bits.SAMP = 1; //Lance une acquisition ADC
 }
 

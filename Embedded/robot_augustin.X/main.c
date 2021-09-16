@@ -31,8 +31,8 @@ int main(void) {
     //        PWMSetSpeed(30, 1);
     //        PWMSetSpeed(-30, 0);
 
-    PWMSetSpeedConsigne(50, 1);
-    PWMSetSpeedConsigne(50, 0);
+    PWMSetSpeedConsigne(25, 1);
+    PWMSetSpeedConsigne(25, 0);
 
     LED_BLANCHE = 1;
     LED_BLEUE = 1;

@@ -61,7 +61,7 @@ void InitPWM(void) {
 //    }
 //}
 
-void PWMUpdateSpeed() {
+void PWMUpdateSpeed(void) {
     // Cette fonction est appelée sur timer et permet de suivre des rampes d'accélération
     if (robotState.vitesseDroiteCommandeCourante < robotState.vitesseDroiteConsigne) {
         robotState.vitesseDroiteCommandeCourante = Min(
