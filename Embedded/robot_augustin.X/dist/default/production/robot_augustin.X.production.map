@@ -411,7 +411,7 @@ __FOSCSEL
 
 __FGS             0x0557fa          0x2
  *(__FGS.sec*)
- __FGS.sec        0x0557fa          0x2 /CW/_FGSà
+ __FGS.sec        0x0557fa          0x2 /CW/_FGSê
                   0x0557fa                  __FGS.sec
 
 __FUID0
@@ -429,39 +429,39 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x4171
+.debug_info       0x000000       0x4127
  *(.debug_info)
  .debug_info      0x000000        0x52e build/default/production/main.o
  .debug_info      0x00052e        0x53d build/default/production/ChipConfig.o
  .debug_info      0x000a6b        0x5fd build/default/production/IO.o
- .debug_info      0x001068        0xca9 build/default/production/timer.o
- .debug_info      0x001d11        0x20b build/default/production/ToolBox.o
- .debug_info      0x001f1c        0xdf0 build/default/production/PWM.o
- .debug_info      0x002d0c       0x1236 build/default/production/adc.o
- .debug_info      0x003f42        0x22f build/default/production/Robot.o
+ .debug_info      0x001068        0xc5f build/default/production/timer.o
+ .debug_info      0x001cc7        0x20b build/default/production/ToolBox.o
+ .debug_info      0x001ed2        0xdf0 build/default/production/PWM.o
+ .debug_info      0x002cc2       0x1236 build/default/production/adc.o
+ .debug_info      0x003ef8        0x22f build/default/production/Robot.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x6f3
+.debug_abbrev     0x000000        0x6ca
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x108 build/default/production/main.o
  .debug_abbrev    0x000108         0xc3 build/default/production/ChipConfig.o
  .debug_abbrev    0x0001cb         0x99 build/default/production/IO.o
- .debug_abbrev    0x000264        0x129 build/default/production/timer.o
- .debug_abbrev    0x00038d         0x6d build/default/production/ToolBox.o
- .debug_abbrev    0x0003fa        0x145 build/default/production/PWM.o
- .debug_abbrev    0x00053f        0x128 build/default/production/adc.o
- .debug_abbrev    0x000667         0x8c build/default/production/Robot.o
+ .debug_abbrev    0x000264        0x100 build/default/production/timer.o
+ .debug_abbrev    0x000364         0x6d build/default/production/ToolBox.o
+ .debug_abbrev    0x0003d1        0x145 build/default/production/PWM.o
+ .debug_abbrev    0x000516        0x128 build/default/production/adc.o
+ .debug_abbrev    0x00063e         0x8c build/default/production/Robot.o
 
-.debug_line       0x000000        0x816
+.debug_line       0x000000        0x818
  *(.debug_line)
  .debug_line      0x000000        0x140 build/default/production/main.o
  .debug_line      0x000140        0x124 build/default/production/ChipConfig.o
  .debug_line      0x000264        0x120 build/default/production/IO.o
- .debug_line      0x000384        0x15d build/default/production/timer.o
- .debug_line      0x0004e1         0x54 build/default/production/ToolBox.o
- .debug_line      0x000535        0x15e build/default/production/PWM.o
- .debug_line      0x000693        0x153 build/default/production/adc.o
- .debug_line      0x0007e6         0x30 build/default/production/Robot.o
+ .debug_line      0x000384        0x15f build/default/production/timer.o
+ .debug_line      0x0004e3         0x54 build/default/production/ToolBox.o
+ .debug_line      0x000537        0x15e build/default/production/PWM.o
+ .debug_line      0x000695        0x153 build/default/production/adc.o
+ .debug_line      0x0007e8         0x30 build/default/production/Robot.o
 
 .debug_frame      0x000000        0x34a
  *(.debug_frame)
@@ -2359,7 +2359,7 @@ LOAD c:/program files/microchip/xc16/v1.60/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files/microchip/xc16/v1.60/bin/bin/../../lib\liblega-c-elf.a
 END GROUP
 OUTPUT(dist/default/production/robot_augustin.X.production.elf elf32-pic30)
-LOAD /CW/_FGSà
+LOAD /CW/_FGSê
 LOAD default_isr
 LOAD data_init
 

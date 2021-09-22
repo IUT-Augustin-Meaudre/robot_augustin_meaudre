@@ -1,8 +1,9 @@
-
 #include <xc.h>
 #include "timer.h"
 #include "IO.h"
 #include "main.h"
+#include "PWM.h"
+#include "adc.h"
 
 //Initialisation d?un timer 32 bits
 

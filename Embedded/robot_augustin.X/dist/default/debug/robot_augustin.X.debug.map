@@ -4,13 +4,13 @@ Tool Name:
   c:\program files\microchip\xc16\v1.60\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.00 \
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.01 \
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.02 \
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.03 \
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.04 \
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.05 \
-  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002100.06 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.00 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.01 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.02 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.03 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.04 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.05 \
+  -TC:\\Users\\Table2\\AppData\\Local\\Temp\\tmp00002814.06 \
   -p33EP512GM306 \
   --mdfp=C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/dsPIC33E-GM-GP-MC-GU-MU_DFP/1.2.58/xc16 \
   -o \
@@ -466,7 +466,7 @@ __FOSCSEL
 
 __FGS             0x0557fa          0x2
  *(__FGS.sec*)
- __FGS.sec        0x0557fa          0x2 /CW/_FGS
+ __FGS.sec        0x0557fa          0x2 /CW/_FGSðb	
                   0x0557fa                  __FGS.sec
 
 __FUID0
@@ -484,39 +484,39 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x4171
+.debug_info       0x000000       0x4127
  *(.debug_info)
  .debug_info      0x000000        0x52e build/default/debug/main.o
  .debug_info      0x00052e        0x53d build/default/debug/ChipConfig.o
  .debug_info      0x000a6b        0x5fd build/default/debug/IO.o
- .debug_info      0x001068        0xca9 build/default/debug/timer.o
- .debug_info      0x001d11        0x20b build/default/debug/ToolBox.o
- .debug_info      0x001f1c        0xdf0 build/default/debug/PWM.o
- .debug_info      0x002d0c       0x1236 build/default/debug/adc.o
- .debug_info      0x003f42        0x22f build/default/debug/Robot.o
+ .debug_info      0x001068        0xc5f build/default/debug/timer.o
+ .debug_info      0x001cc7        0x20b build/default/debug/ToolBox.o
+ .debug_info      0x001ed2        0xdf0 build/default/debug/PWM.o
+ .debug_info      0x002cc2       0x1236 build/default/debug/adc.o
+ .debug_info      0x003ef8        0x22f build/default/debug/Robot.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x6f3
+.debug_abbrev     0x000000        0x6ca
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x108 build/default/debug/main.o
  .debug_abbrev    0x000108         0xc3 build/default/debug/ChipConfig.o
  .debug_abbrev    0x0001cb         0x99 build/default/debug/IO.o
- .debug_abbrev    0x000264        0x129 build/default/debug/timer.o
- .debug_abbrev    0x00038d         0x6d build/default/debug/ToolBox.o
- .debug_abbrev    0x0003fa        0x145 build/default/debug/PWM.o
- .debug_abbrev    0x00053f        0x128 build/default/debug/adc.o
- .debug_abbrev    0x000667         0x8c build/default/debug/Robot.o
+ .debug_abbrev    0x000264        0x100 build/default/debug/timer.o
+ .debug_abbrev    0x000364         0x6d build/default/debug/ToolBox.o
+ .debug_abbrev    0x0003d1        0x145 build/default/debug/PWM.o
+ .debug_abbrev    0x000516        0x128 build/default/debug/adc.o
+ .debug_abbrev    0x00063e         0x8c build/default/debug/Robot.o
 
-.debug_line       0x000000        0x816
+.debug_line       0x000000        0x818
  *(.debug_line)
  .debug_line      0x000000        0x140 build/default/debug/main.o
  .debug_line      0x000140        0x124 build/default/debug/ChipConfig.o
  .debug_line      0x000264        0x120 build/default/debug/IO.o
- .debug_line      0x000384        0x15d build/default/debug/timer.o
- .debug_line      0x0004e1         0x54 build/default/debug/ToolBox.o
- .debug_line      0x000535        0x15e build/default/debug/PWM.o
- .debug_line      0x000693        0x153 build/default/debug/adc.o
- .debug_line      0x0007e6         0x30 build/default/debug/Robot.o
+ .debug_line      0x000384        0x15f build/default/debug/timer.o
+ .debug_line      0x0004e3         0x54 build/default/debug/ToolBox.o
+ .debug_line      0x000537        0x15e build/default/debug/PWM.o
+ .debug_line      0x000695        0x153 build/default/debug/adc.o
+ .debug_line      0x0007e8         0x30 build/default/debug/Robot.o
 
 .debug_frame      0x000000        0x34a
  *(.debug_frame)
@@ -2414,7 +2414,7 @@ LOAD c:/program files/microchip/xc16/v1.60/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files/microchip/xc16/v1.60/bin/bin/../../lib\liblega-c-elf.a
 END GROUP
 OUTPUT(dist/default/debug/robot_augustin.X.debug.elf elf32-pic30)
-LOAD /CW/_FGS
+LOAD /CW/_FGSðb	
 LOAD default_isr
 LOAD data_init
 
