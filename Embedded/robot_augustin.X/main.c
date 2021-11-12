@@ -19,18 +19,11 @@ int main(void) {
     // Configuration des entrées sorties
     /****************************************************************************************************/
     InitIO();
-
     InitTimer23();
-
     InitTimer1();
-
-    void InitTimer4(void);
-
-
+    InitTimer4();    
+    InitPWM();
     InitADC1();
-
-    //        PWMSetSpeed(30, 1);
-    //        PWMSetSpeed(-30, 0);
 
     PWMSetSpeedConsigne(25, 1);
     PWMSetSpeedConsigne(25, 0);
@@ -147,7 +140,7 @@ void SetNextRobotStateInAutomaticMode() {
             robotState.distanceTelemetreGauche > 30) //pas d?obstacle
         positionObstacle = PAS_D_OBSTACLE;
 
-    //Détermination de l?état à venir du robot
+    //Détermination de l'état à venir du robot
     if (positionObstacle == PAS_D_OBSTACLE)
         nextStateRobot = STATE_AVANCE;
     else if (positionObstacle == OBSTACLE_A_DROITE)
@@ -158,6 +151,6 @@ void SetNextRobotStateInAutomaticMode() {
         nextStateRobot = STATE_TOURNE_SUR_PLACE_GAUCHE;
 
     //Si l?on n?est pas dans la transition de l?étape en cours
-    if (nextStateRobot != stateRobot - 1)
+    if (nextStateRobot != (stateRobot - 1))
         stateRobot = nextStateRobot;
 }

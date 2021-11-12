@@ -38,7 +38,7 @@ void __attribute__((interrupt, no_auto_psv)) _T3Interrupt(void) {
 //Initialisation d?un timer 16 bits
 
 void InitTimer1(void) {
-    SetFreqTimer1(50);
+    SetFreqTimer1(200);
     //Timer1 pour horodater les mesures (1ms)
     T1CONbits.TON = 0; // Disable Timer
     //T1CONbits.TCKPS = 0b10; //Prescaler
