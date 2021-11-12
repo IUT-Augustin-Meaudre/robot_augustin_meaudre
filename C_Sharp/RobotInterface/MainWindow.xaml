@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox x:Name="Emission" Grid.Column="0" Grid.Row="0" Header="Emission" Height="150" VerticalAlignment="Top" Width="350" Background="#FFDDDDDD" BorderBrush="Black"/>
+        <GroupBox x:Name="Reception" Grid.Column="1" Grid.Row="0" Header="Reception" Height="150" VerticalAlignment="Top" Width="350" Background="#FFDDDDDD" BorderBrush="Black"/>
         
+
     </Grid>
 </Window>
