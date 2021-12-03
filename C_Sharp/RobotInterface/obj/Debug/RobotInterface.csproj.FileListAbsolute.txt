@@ -13,3 +13,6 @@ C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\obj\Debug\RobotInterface
 C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\obj\Debug\RobotInterface.csproj.CoreCompileInputs.cache
 C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\obj\Debug\RobotInterface.exe
 C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\obj\Debug\RobotInterface.pdb
+C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\bin\Debug\ExtendedSerialPort.dll
+C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\bin\Debug\ExtendedSerialPort.pdb
+C:\Github\robot_augustin_meaudre\C_Sharp\RobotInterface\obj\Debug\RobotInterface.csproj.CopyComplete

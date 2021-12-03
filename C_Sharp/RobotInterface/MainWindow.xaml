@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RobotInterface"
+        xmlns:local="clr-namespace:RobotInterface"        
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid KeyUp="Grid_KeyUp">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="30*"/>
@@ -25,10 +25,10 @@
         </Grid.RowDefinitions>
 
         <GroupBox x:Name="Emission" Grid.Column="1" Grid.Row="1" Header="Emission" Background="#FFDDDDDD" BorderBrush="Black" Margin="0,0,0,0" >
-            <TextBox x:Name="textBoxEmission" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" TextWrapping="Wrap" Text="textBoxEmission" VerticalAlignment="Stretch" Width="Auto" AcceptsReturn="True" />
+            <TextBox x:Name="textBoxEmission" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="Auto" AcceptsReturn="True" />
         </GroupBox>
         <GroupBox x:Name="Reception" Grid.Column="3" Grid.Row="1" Header="Reception" Background="#FFDDDDDD" BorderBrush="Black" Margin="0,0,0,0">
-            <TextBox x:Name="RichTexBox" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" TextWrapping="Wrap" Text="RichTexBox" VerticalAlignment="Stretch" Width="Auto" IsReadOnly="True"/>
+            <TextBox x:Name="RichTexBox" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="Auto" IsReadOnly="True"/>
         </GroupBox>
         <Button x:Name="ButtonEnvoyer" Content="Envoyer" Grid.Column="1" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" Width="100" FontSize="6" Click="ButtonEnvoyer_Click"/>
 
