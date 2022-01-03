@@ -26,6 +26,8 @@ namespace RobotInterface
     {
         ReliableSerialPort serialPort1;
         Robot robot = new Robot();
+        DispatcherTimer timerAffichage;
+
 
         public MainWindow()
         {
@@ -35,9 +37,19 @@ namespace RobotInterface
             serialPort1 = new ReliableSerialPort("COM15", 115200, Parity.None, 8, StopBits.One);
             serialPort1.DataReceived += SerialPort1_DataReceived;
             serialPort1.Open();
-
-            
+            timerAffichage = new DispatcherTimer();
+            timerAffichage.Interval = new TimeSpan(0, 0, 0, 0, 100);
+            timerAffichage.Tick += TimerAffichage_Tick;
+            timerAffichage.Start();
+       
         }
+
+        private void TimerAffichage_Tick(object sender, EventArgs e)
+        {
+            texBoxReception.Text += robot.receivedText;
+            robot.receivedText = "";
+        }
+
         public void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
         { 
             robot.receivedText += Encoding.UTF8.GetString(e.Data, 0, e.Data.Length); 
