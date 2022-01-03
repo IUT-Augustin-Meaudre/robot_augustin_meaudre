@@ -25,7 +25,6 @@ namespace RobotInterface
     public partial class MainWindow : Window
     {
         ReliableSerialPort serialPort1;
-        AsyncCallback SerialPort1_DataRecived;
         Robot robot = new Robot();
 
         public MainWindow()
@@ -39,11 +38,12 @@ namespace RobotInterface
 
             
         }
-
-        private void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
-        {
-            robot.receivedText += Encoding.UTF8.GetString(e.Data, 0, e.Data.Length);
+        public void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
+        { 
+            robot.receivedText += Encoding.UTF8.GetString(e.Data, 0, e.Data.Length); 
         }
+
+
 
         
         Boolean isColor;
@@ -80,5 +80,6 @@ namespace RobotInterface
             textBoxEmission.Text = "";
             
         }
+
     }
 }
