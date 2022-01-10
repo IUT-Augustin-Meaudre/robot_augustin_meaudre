@@ -46,7 +46,7 @@ namespace RobotInterface
 
         private void TimerAffichage_Tick(object sender, EventArgs e)
         {
-            texBoxReception.Text += robot.receivedText;
+            textBoxReception.Text += robot.receivedText;
             robot.receivedText = "";
         }
 
@@ -76,6 +76,11 @@ namespace RobotInterface
             SendMessage();
         }
 
+        private void ButtonClear_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxReception.Text = "";
+        }
+
         private void Grid_KeyUp(object sender, KeyEventArgs e)
         {
             if(e.Key == Key.Enter )
@@ -93,5 +98,6 @@ namespace RobotInterface
             
         }
 
+        
     }
 }
