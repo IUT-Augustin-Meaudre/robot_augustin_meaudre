@@ -25,7 +25,7 @@ namespace RobotInterface
     public partial class MainWindow : Window
     {
         ReliableSerialPort serialPort1;
-        Robot robot = new Robot();
+         Robot robot = new Robot();
         DispatcherTimer timerAffichage;
 
 
