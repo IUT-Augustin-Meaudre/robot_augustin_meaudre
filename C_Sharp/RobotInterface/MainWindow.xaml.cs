@@ -49,18 +49,34 @@ namespace RobotInterface
 
         private void TimerAffichage_Tick(object sender, EventArgs e)
         {
-            textBoxReception.Text += robot.receivedText;
+            //textBoxReception.Text += robot.receivedText;
+            while(0<robot.byteListReceived.Count)
+            {
+                byte byteReceived  = robot.byteListReceived.Dequeue();
+                textBoxReception.Text += "0x" + byteReceived.ToString("X2") + " ";
+            }
+            
             robot.receivedText = "";
         }
 
         public void SerialPort1_DataReceived(object sender, DataReceivedArgs e)
         { 
-            robot.receivedText += Encoding.UTF8.GetString(e.Data, 0, e.Data.Length); 
+            //robot.receivedText += Encoding.UTF8.GetString(e.Data, 0, e.Data.Length);
+
+            for (int i = 0; i < e.Data.Length; i++)
+            {
+                robot.byteListReceived.Enqueue(e.Data[i]);
+
+            }
+
+            // byte.ToString();
+            
+
         }
 
 
 
-        
+
         Boolean isColor;
 
         private void ButtonEnvoyer_Click(object sender, RoutedEventArgs e)
