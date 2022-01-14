@@ -16,11 +16,11 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="30*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
 
         </Grid.RowDefinitions>
 
@@ -30,8 +30,11 @@
         <GroupBox x:Name="Reception" Grid.Column="3" Grid.Row="1" Header="Reception" Background="#FFDDDDDD" BorderBrush="Black" Margin="0,0,0,0">
             <TextBox x:Name="textBoxReception" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="Auto" IsReadOnly="True"/>
         </GroupBox>
-        <Button x:Name="ButtonEnvoyer" Content="Envoyer" Grid.Column="1" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" Width="100" FontSize="6" Click="ButtonEnvoyer_Click"/>
-        <Button x:Name="ButtonClear" Content="Clear" Grid.Column="3" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" Width="100" FontSize="6" Click="ButtonClear_Click"/>
+        <Button x:Name="ButtonEnvoyer" Content="Envoyer" Grid.Column="1" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" Width="100" FontSize="12" Click="ButtonEnvoyer_Click"/>
+        <Button x:Name="ButtonClear" Content="Clear" Grid.Column="3" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" Width="100" FontSize="12" Click="ButtonClear_Click"/>
+        <Button x:Name="ButtonTest" Content="Test" Grid.Column="1" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Stretch" Width="100" FontSize="12" Click="ButtonTest_Click"/>
+        <Button x:Name="ButtonHello" Content="Hello" Grid.Column="3" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Stretch" Width="100" FontSize="12" Click="ButtonHello_Click"/>
+
 
     </Grid>
 </Window>

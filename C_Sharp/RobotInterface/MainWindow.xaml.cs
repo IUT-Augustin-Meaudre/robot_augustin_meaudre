@@ -28,13 +28,16 @@ namespace RobotInterface
          Robot robot = new Robot();
         DispatcherTimer timerAffichage;
 
+        byte[] byteList = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+        int i;
+
 
         public MainWindow()
         {
             InitializeComponent();
             
 
-            serialPort1 = new ReliableSerialPort("COM15", 115200, Parity.None, 8, StopBits.One);
+            serialPort1 = new ReliableSerialPort("COM5", 115200, Parity.None, 8, StopBits.One);
             serialPort1.DataReceived += SerialPort1_DataReceived;
             serialPort1.Open();
             timerAffichage = new DispatcherTimer();
@@ -81,6 +84,13 @@ namespace RobotInterface
             textBoxReception.Text = "";
         }
 
+        private void ButtonTest_Click(object sender, RoutedEventArgs e)
+        {
+            byteList[i] = (byte)(2 * i);
+            SendMessage();
+
+        }
+
         private void Grid_KeyUp(object sender, KeyEventArgs e)
         {
             if(e.Key == Key.Enter )
@@ -88,6 +98,12 @@ namespace RobotInterface
                 SendMessage();
             }
             
+        }
+
+        private void ButtonHello_Click(object sender, RoutedEventArgs e)
+        {
+            serialPort1.WriteLine("hello");
+            textBoxEmission.Text = "";
         }
 
         void SendMessage()
